@@ -10,7 +10,7 @@ add_subdirectory(cuda)
 set (EXTRA_LIBS ${EXTRA_LIBS} gpu)
 
 
-ADD_EXECUTABLE(project main.cpp)
+ADD_EXECUTABLE(project host.cpp)
 
 
 target_link_libraries (project ${EXTRA_LIBS})

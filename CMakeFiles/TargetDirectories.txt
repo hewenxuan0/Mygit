@@ -1,6 +1,6 @@
-/data/GPU_virtualization/CMakeFiles/project.dir
-/data/GPU_virtualization/CMakeFiles/edit_cache.dir
-/data/GPU_virtualization/CMakeFiles/rebuild_cache.dir
-/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir
-/data/GPU_virtualization/cuda/CMakeFiles/edit_cache.dir
-/data/GPU_virtualization/cuda/CMakeFiles/rebuild_cache.dir
+/mnt/data/GPU_virtualization/CMakeFiles/project.dir
+/mnt/data/GPU_virtualization/CMakeFiles/edit_cache.dir
+/mnt/data/GPU_virtualization/CMakeFiles/rebuild_cache.dir
+/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir
+/mnt/data/GPU_virtualization/cuda/CMakeFiles/edit_cache.dir
+/mnt/data/GPU_virtualization/cuda/CMakeFiles/rebuild_cache.dir

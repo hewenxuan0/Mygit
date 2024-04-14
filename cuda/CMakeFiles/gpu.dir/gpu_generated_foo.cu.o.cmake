@@ -59,17 +59,17 @@ endif()
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/local/bin/cmake") # path
 set(source_file "/data/GPU_virtualization/cuda/foo.cu") # path
-set(NVCC_generated_dependency_file "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.depend") # path
+set(NVCC_generated_dependency_file "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/local/share/cmake-3.22/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/local/share/cmake-3.22/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//.") # path
-set(generated_file_internal "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o") # path
-set(generated_cubin_file_internal "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o.cubin.txt") # path
+set(generated_file_path "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//.") # path
+set(generated_file_internal "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o") # path
+set(generated_cubin_file_internal "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  ;; ) # list

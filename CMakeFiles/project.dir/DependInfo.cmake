@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/GPU_virtualization/main.cpp" "CMakeFiles/project.dir/main.cpp.o" "gcc" "CMakeFiles/project.dir/main.cpp.o.d"
+  "/data/GPU_virtualization/host.cpp" "CMakeFiles/project.dir/host.cpp.o" "gcc" "CMakeFiles/project.dir/host.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/DependInfo.cmake"
+  "/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

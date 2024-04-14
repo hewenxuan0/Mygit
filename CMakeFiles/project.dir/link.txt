@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/project.dir/main.cpp.o -o project  cuda/libgpu.a /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt 
+/usr/bin/c++ -rdynamic CMakeFiles/project.dir/host.cpp.o -o project  cuda/libgpu.a /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt 

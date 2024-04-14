@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/data/GPU_virtualization")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/data/GPU_virtualization")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/data/GPU_virtualization")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

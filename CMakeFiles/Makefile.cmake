@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/data/GPU_virtualization/CMakeLists.txt"
+  "/data/GPU_virtualization/cuda/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "CMakeLists.txt"
   "cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o.cmake.pre-gen"
   "cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o.depend"
-  "cuda/CMakeLists.txt"
   "/usr/local/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"

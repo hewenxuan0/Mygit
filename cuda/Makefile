@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /data/GPU_virtualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/GPU_virtualization
+CMAKE_BINARY_DIR = /mnt/data/GPU_virtualization
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/GPU_virtualization && $(CMAKE_COMMAND) -E cmake_progress_start /data/GPU_virtualization/CMakeFiles /data/GPU_virtualization/cuda//CMakeFiles/progress.marks
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/GPU_virtualization/CMakeFiles 0
+	cd /mnt/data/GPU_virtualization && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/GPU_virtualization/CMakeFiles /mnt/data/GPU_virtualization/cuda//CMakeFiles/progress.marks
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/GPU_virtualization/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/clean
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/preinstall
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/preinstall
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/GPU_virtualization && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/data/GPU_virtualization && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cuda/CMakeFiles/gpu.dir/rule:
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/CMakeFiles/gpu.dir/rule
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda/CMakeFiles/gpu.dir/rule
 .PHONY : cuda/CMakeFiles/gpu.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ gpu: cuda/CMakeFiles/gpu.dir/rule
 
 # fast build rule for target.
 gpu/fast:
-	cd /data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f cuda/CMakeFiles/gpu.dir/build.make cuda/CMakeFiles/gpu.dir/build
+	cd /mnt/data/GPU_virtualization && $(MAKE) $(MAKESILENT) -f cuda/CMakeFiles/gpu.dir/build.make cuda/CMakeFiles/gpu.dir/build
 .PHONY : gpu/fast
 
 # Help Target
@@ -150,6 +150,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/GPU_virtualization && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/data/GPU_virtualization && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

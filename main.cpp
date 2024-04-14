@@ -6,12 +6,15 @@
 #include<istream>
 #include<vector>
 #include<math.h>
+#include "Client.h"
 
 
 using namespace std;
 
+Client client_a[10];
+
 extern "C"
-void useCUDA(int *a,int *b,int *c,int width);
+void useCUDA(int *a,int *b,int *c,int width,int num);
 
 int stringToInt(std::string s){
     int res=0;
@@ -28,7 +31,7 @@ vector<int> split(const string& str, const string& delim) {
 	if("" == str) return res;  
 	//先将要切割的字符串从string类型转换为char*类型  
 	char * strs = new char[str.length() + 1] ; //不要忘了  
-	strcpy(strs, str.c_str());   
+	strcpy(strs, str.c_str());
  
 	char * d = new char[delim.length() + 1];  
 	strcpy(d, delim.c_str());  
@@ -45,6 +48,7 @@ vector<int> split(const string& str, const string& delim) {
 
 int main()
 {
+    client_a[0].mem=10;
     ifstream f("1.txt");
     string temp;
     getline(f,temp);
@@ -57,7 +61,7 @@ int main()
     //     cout<<a[i]<<endl;
     mat.clear();
     int *res=new int[size];
-    useCUDA(a,a,res,sqrt(size));
+    useCUDA(a,a,res,sqrt(size),0);
     // do
     // {
         

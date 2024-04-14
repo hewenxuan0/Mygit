@@ -1,30 +1,42 @@
 #include "foo.cuh"
 
 
-#define CHECK(res) { if(res != cudaSuccess){printf("Error :%s:%d , ", __FILE__,__LINE__);   \
-printf("code : %d , reason : %s \n", res,cudaGetErrorString(res));exit(-1);}}
 
 
-__global__ void MatMul(int *M,int *N,int *P,int width)
+__global__ void MatMul(int *M,int *N,int *P,int width,int num)
 {
 	int x = threadIdx.x;
 	int y = threadIdx.y;
 	
 	
 	float elem1 = 0.0,elem2 = 0.0,value = 0.0;
-	for(int i = 0;i < width;i++)
-	{
-		elem1 = M[y * width + i];//取M矩阵的一行
-		elem2 = N[i * width + x];//取N矩阵的一列
-		
-		value += elem1 * elem2;//求和
+	int i=0;
+	while(i<width){
+		if(client[num].run){
+			elem1 = M[y * width + i];//取M矩阵的一行
+			elem2 = N[i * width + x];//取N矩阵的一列
+			
+			value += elem1 * elem2;//求和
+			i++;
+			printf("this is %d client\n",num);
+		}
+		else{
+			continue;
+		}
 	}
+	// for(int i = 0;i < width;i++)
+	// {
+	// 	elem1 = M[y * width + i];//取M矩阵的一行
+	// 	elem2 = N[i * width + x];//取N矩阵的一列
+		
+	// 	value += elem1 * elem2;//求和
+	// }
 	
 	P[y * width + x] = value;
 }
 
 
-void useCUDA(int *a,int *b,int *c,int width)
+void useCUDA(int *a,int *b,int *c,int width,int num)
 {
     // printf("width=%d",width);
     // for(int i=0;i<width*width;i++)
@@ -33,6 +45,7 @@ void useCUDA(int *a,int *b,int *c,int width)
     //const int width = 30;
 	//int a[width][width],b[width][width],c[width][width];
 	int *M,*N,*P;
+	//printf("client.mem=%d \n",client_a[0].mem);
 	
 	//int width = width;
 	//int NUM = 900;
@@ -57,7 +70,7 @@ void useCUDA(int *a,int *b,int *c,int width)
 	cudaMemcpy(N,b,Size * sizeof(int),cudaMemcpyHostToDevice);
 	
 	cudaEventRecord(start,0);
-	MatMul<<<1,blockSize>>>(M,N,P,width);//调用核函数
+	MatMul<<<1,blockSize>>>(M,N,P,width,0);//调用核函数
 	cudaDeviceSynchronize();
 	cudaEventRecord(stop,0);
 	cudaEventSynchronize(stop);
@@ -65,12 +78,12 @@ void useCUDA(int *a,int *b,int *c,int width)
 	
 	cudaMemcpy(c,P,Size * sizeof(int),cudaMemcpyDeviceToHost);
 	
-	for(int i=0;i<width;i++){
-		for(int j=0;j<width;j++){
-			printf("c=%d \n",c[i*width+j]);
-		}
-		printf("\n");
-	}
+	// for(int i=0;i<width;i++){
+	// 	for(int j=0;j<width;j++){
+	// 		printf("c=%d \n",c[i*width+j]);
+	// 	}
+	// 	printf("\n");
+	// }
 	//printf("time=%d \n",elapsedTime);
 	
 	

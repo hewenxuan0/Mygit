@@ -1,4 +1,4 @@
-CMakeFiles/project.dir/main.cpp.o: /data/GPU_virtualization/main.cpp \
+CMakeFiles/project.dir/host.cpp.o: /data/GPU_virtualization/host.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -135,27 +135,8 @@ CMakeFiles/project.dir/main.cpp.o: /data/GPU_virtualization/main.cpp \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/cstring \
- /usr/include/string.h /usr/include/strings.h /usr/include/c++/9/fstream \
- /usr/include/c++/9/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
- /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/vector \
- /usr/include/c++/9/bits/stl_construct.h \
- /usr/include/c++/9/bits/stl_uninitialized.h \
- /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /usr/include/c++/9/math.h /usr/include/c++/9/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /data/GPU_virtualization/Client.h /usr/include/c++/9/stdlib.h \
+ /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/stdlib.h \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
@@ -187,10 +168,27 @@ CMakeFiles/project.dir/main.cpp.o: /data/GPU_virtualization/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/c++/9/cstring /usr/include/c++/9/fstream \
+ /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/math.h \
+ /usr/include/c++/9/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/9/thread /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/limits \
  /usr/include/c++/9/ctime /usr/include/c++/9/bits/parse_numbers.h \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_tempbuf.h \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_construct.h \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
+ /usr/include/c++/9/bits/stl_tempbuf.h \
  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/uses_allocator.h \
@@ -205,7 +203,10 @@ CMakeFiles/project.dir/main.cpp.o: /data/GPU_virtualization/main.cpp \
  /usr/include/c++/9/bits/shared_ptr_atomic.h \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
- /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/mutex \
+ /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /data/GPU_virtualization/Client.h /usr/include/c++/9/mutex \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
  /usr/include/c++/9/condition_variable \

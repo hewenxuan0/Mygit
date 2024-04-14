@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /data/GPU_virtualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/GPU_virtualization
+CMAKE_BINARY_DIR = /mnt/data/GPU_virtualization
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/GPU_virtualization/CMakeFiles /data/GPU_virtualization//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/GPU_virtualization/CMakeFiles /mnt/data/GPU_virtualization//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/GPU_virtualization/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/data/GPU_virtualization/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,29 +142,29 @@ gpu/fast:
 	$(MAKE) $(MAKESILENT) -f cuda/CMakeFiles/gpu.dir/build.make cuda/CMakeFiles/gpu.dir/build
 .PHONY : gpu/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+host.o: host.cpp.o
+.PHONY : host.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/main.cpp.o
-.PHONY : main.cpp.o
+host.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/host.cpp.o
+.PHONY : host.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+host.i: host.cpp.i
+.PHONY : host.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/main.cpp.i
-.PHONY : main.cpp.i
+host.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/host.cpp.i
+.PHONY : host.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+host.s: host.cpp.s
+.PHONY : host.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/main.cpp.s
-.PHONY : main.cpp.s
+host.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/host.cpp.s
+.PHONY : host.cpp.s
 
 # Help Target
 help:
@@ -176,9 +176,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gpu"
 	@echo "... project"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... host.o"
+	@echo "... host.i"
+	@echo "... host.s"
 .PHONY : help
 
 

@@ -10,16 +10,31 @@
 #include<stddef.h>
 #include<unistd.h>
 #include<string>
+#include<cstring>
+#include<fstream>
+#include<istream>
+#include<math.h>
 #include <cstdlib>
 #include<thread>
+#include<vector>
 
 #include"Client.h"
 
 using namespace std;
 
-#define MAX_CONNECT_NUM 2
+#define MAX_CONNECT_NUM 10
 #define BUFFER_SIZE 1024
 const char *filename="uds-tmp";
+
+
+std::thread tids[1000];
+static char start[] = "You have successfully connected to the host";
+static int c = 0;
+static Client client[100];
+
+extern "C"
+void useCUDA(int *a,int *b,int *c,int width,int num);
+
 
 int charToInt(char* c){
     int num=0;
@@ -33,10 +48,49 @@ int charToInt(char* c){
     return num;
 }
 
-std::thread tids[1000];
-static char start[] = "You have successfully connected to the host";
-static int c = 0;
-static Client client[1000];
+int stringToInt(std::string s){
+    int res=0;
+    for(int i=0;i<s.length();i++){
+        res*=10;
+        res+=s[i]-48;
+    }
+    return res;
+}
+
+vector<int> split(const string& str, const string& delim) {  
+	vector<int> res;  
+	if("" == str) return res;  
+	//先将要切割的字符串从string类型转换为char*类型  
+	char * strs = new char[str.length() + 1] ; //不要忘了  
+	strcpy(strs, str.c_str());
+ 
+	char * d = new char[delim.length() + 1];  
+	strcpy(d, delim.c_str());  
+ 
+	char *p = strtok(strs, d);  
+	while(p) {  
+		string s = p; //分割得到的字符串转换为string类型  
+		res.push_back(stringToInt(s)); //存入结果数组  
+		p = strtok(NULL, d);  
+	}  
+ 
+	return res;  
+}
+
+void schedule(){
+    cout<<"schedule begin"<<endl;
+    
+    int count=0;
+    while(c!=0){
+        client[count].run=true;
+        //client[count].cv.notify_all();
+        sleep(client[count].compute);
+        client[count].run=false;
+        count=(count+1)%c;
+    }
+}
+
+
 
 void ClientThread(int num) {
     
@@ -62,10 +116,23 @@ void ClientThread(int num) {
             //cout<<"succ"<<endl;
 			//string title;
 			string tmp = revData;
-			cout << tmp << endl;		
+			cout << tmp << endl;
+            ifstream f(tmp);
+            string temp;
+            getline(f,temp);
+            vector<int> mat=split(temp," ");
+            
+            int size=mat.size();
+            int *a=mat.data();
+            // cout<<size<<endl;
+            // for(int i=0;i<size;i++)
+            //     cout<<a[i]<<endl;
+            mat.clear();
+            int *res=new int[size];
+            useCUDA(a,a,res,sqrt(size),num);
 		}
 		else {
-            cout<<"fail"<<endl;
+            //cout<<"fail"<<endl;
 			//cout << client[num].name << " just quits" << endl;
 			//client[num].ifonline = false;
 			//pthread_exit(0);
@@ -94,6 +161,8 @@ int main()
         printf("listen failed!\n");
         return -1;
     }
+    thread t=thread(schedule);
+    t.detach();
     while(1){
         struct sockaddr_un client_addr;
         char buffer[BUFFER_SIZE];

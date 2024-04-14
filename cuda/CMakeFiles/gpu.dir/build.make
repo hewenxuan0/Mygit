@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /data/GPU_virtualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/GPU_virtualization
+CMAKE_BINARY_DIR = /mnt/data/GPU_virtualization
 
 # Include any dependencies generated for this target.
 include cuda/CMakeFiles/gpu.dir/depend.make
@@ -69,56 +69,180 @@ include cuda/CMakeFiles/gpu.dir/progress.make
 # Include the compile flags for this target's objects.
 include cuda/CMakeFiles/gpu.dir/flags.make
 
-cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: cuda/foo.cu
-cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: cuda/foo.cuh
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /data/GPU_virtualization/Client.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /data/GPU_virtualization/cuda/foo.cu
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /data/GPU_virtualization/cuda/foo.cuh
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /data/GPU_virtualization/threadpool.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/alloca.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/bitsperlong.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/errno-base.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/errno.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/int-ll64.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/posix_types.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/socket.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/sockios.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/asm-generic/types.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/assert.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/array
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/backward/auto_ptr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/backward/binders.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/alloc_traits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/allocated_ptr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/allocator.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/atomic_base.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/atomic_lockfree_defines.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/basic_ios.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/basic_ios.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/basic_string.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/basic_string.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/char_traits.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/concept_check.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/cpp_type_traits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/cxxabi_forced.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/cxxabi_init_exception.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/exception.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/exception_defines.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/exception_ptr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/functexcept.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/functional_hash.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/hash_bytes.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/invoke.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/ios_base.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/istream.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/locale_classes.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/locale_classes.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/locale_facets.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/locale_facets.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/localefwd.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/memoryfwd.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/move.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/nested_exception.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/ostream.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/ostream_insert.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/parse_numbers.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/postypes.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/predefined_ops.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/ptr_traits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/range_access.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/refwrap.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/shared_ptr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/shared_ptr_atomic.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/shared_ptr_base.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/std_abs.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/std_mutex.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_algobase.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_construct.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_function.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_iterator.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_iterator_base_funcs.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_iterator_base_types.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_pair.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_raw_storage_iter.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_relops.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_tempbuf.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stl_uninitialized.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/streambuf.tcc
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/streambuf_iterator.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/stringfwd.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/unique_lock.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/unique_ptr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/bits/uses_allocator.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cctype
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cerrno
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/chrono
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/clocale
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cmath
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/condition_variable
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cstdint
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cstdio
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cstdlib
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ctime
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cwchar
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/cwctype
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/debug/assertions.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/debug/debug.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/exception
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/aligned_buffer.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/alloc_traits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/atomicity.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/concurrence.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/new_allocator.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/numeric_traits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/string_conversions.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ext/type_traits.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/initializer_list
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ios
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/iosfwd
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/iostream
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/istream
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/limits
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/math.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/memory
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/mutex
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/new
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ostream
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/ratio
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/stdexcept
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/stdlib.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/streambuf
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/string
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/system_error
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/thread
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/tuple
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/type_traits
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/typeinfo
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/c++/9/utility
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/ctype.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/endian.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/errno.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/features.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/limits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/errno.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/limits.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/posix_types.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/stat.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/stddef.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/linux/types.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/locale.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/math.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/pthread.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/sched.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/stdc-predef.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/stdint.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/stdio.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/stdlib.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/string.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/strings.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/time.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/unistd.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/wchar.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/wctype.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/errno.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/posix_types.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/socket.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/sockios.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/asm/types.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/confname.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/cpu-set.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/endianness.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/environments.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/errno.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/floatn-common.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/floatn.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/fp-fast.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/fp-logb.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/iscanonical.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/local_lim.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/locale.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/long-double.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/math-vector.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
@@ -126,10 +250,20 @@ cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bi
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/posix_opt.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/sched.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/select.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/setjmp.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/sockaddr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/socket.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/socket_type.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/stat.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/statx-generic.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/statx.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
@@ -151,33 +285,56 @@ cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bi
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/error_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/time_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/typesizes.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/waitflags.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/wchar.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/wordsize.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/cdefs.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/select.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/socket.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/stat.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/types.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/include/x86_64-linux-gnu/sys/un.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/local/cuda/include/builtin_types.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/local/cuda/include/channel_descriptor.h
@@ -235,34 +392,34 @@ cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/local/cuda/include/vector_f
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/local/cuda/include/vector_functions.hpp
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /usr/local/cuda/include/vector_types.h
 cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o.cmake
-cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: cuda/foo.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/data/GPU_virtualization/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o"
-	cd /data/GPU_virtualization/cuda/CMakeFiles/gpu.dir && /usr/local/bin/cmake -E make_directory /data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//.
-	cd /data/GPU_virtualization/cuda/CMakeFiles/gpu.dir && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o -D generated_cubin_file:STRING=/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o.cubin.txt -P /data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.cmake
+cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o: /data/GPU_virtualization/cuda/foo.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/data/GPU_virtualization/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o"
+	cd /mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir && /usr/local/bin/cmake -E make_directory /mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//.
+	cd /mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o -D generated_cubin_file:STRING=/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//./gpu_generated_foo.cu.o.cubin.txt -P /mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir//gpu_generated_foo.cu.o.cmake
 
 # Object files for target gpu
 gpu_OBJECTS =
 
 # External object files for target gpu
 gpu_EXTERNAL_OBJECTS = \
-"/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o"
+"/mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o"
 
 cuda/libgpu.a: cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o
 cuda/libgpu.a: cuda/CMakeFiles/gpu.dir/build.make
 cuda/libgpu.a: cuda/CMakeFiles/gpu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/GPU_virtualization/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgpu.a"
-	cd /data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -P CMakeFiles/gpu.dir/cmake_clean_target.cmake
-	cd /data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/data/GPU_virtualization/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgpu.a"
+	cd /mnt/data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -P CMakeFiles/gpu.dir/cmake_clean_target.cmake
+	cd /mnt/data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 cuda/CMakeFiles/gpu.dir/build: cuda/libgpu.a
 .PHONY : cuda/CMakeFiles/gpu.dir/build
 
 cuda/CMakeFiles/gpu.dir/clean:
-	cd /data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -P CMakeFiles/gpu.dir/cmake_clean.cmake
+	cd /mnt/data/GPU_virtualization/cuda && $(CMAKE_COMMAND) -P CMakeFiles/gpu.dir/cmake_clean.cmake
 .PHONY : cuda/CMakeFiles/gpu.dir/clean
 
 cuda/CMakeFiles/gpu.dir/depend: cuda/CMakeFiles/gpu.dir/gpu_generated_foo.cu.o
-	cd /data/GPU_virtualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/GPU_virtualization /data/GPU_virtualization/cuda /data/GPU_virtualization /data/GPU_virtualization/cuda /data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/data/GPU_virtualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/GPU_virtualization /data/GPU_virtualization/cuda /mnt/data/GPU_virtualization /mnt/data/GPU_virtualization/cuda /mnt/data/GPU_virtualization/cuda/CMakeFiles/gpu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cuda/CMakeFiles/gpu.dir/depend
 
